@@ -1,155 +1,49 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Charity: Water Landing Page</title>
-  <style>
-    /* Reset some default styles */
-    body, h1, h2, p, ul {
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Georgia', serif;
-      background-color: #fef8e5; /* Light background */
-      color: #222;
-    }
-
-    /* Navigation bar styles */
-    .navbar {
-      background-color: #fff;
-      padding: 16px 32px;
-      display: flex;
-      align-items: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      font-weight: bold;
-      font-size: 1.3rem;
-      color: #ffc800;
-    }
-
-    .logo img {
-      height: 28px;
-      margin-right: 10px;
-    }
-
-    /* Hero section styles */
-    .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 48px 16px 32px 16px;
-      background: #fef8e5;
-    }
-
-    .hero img {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 10px;
-      margin-bottom: 24px;
-    }
-
-    .hero-title {
-      font-size: 2.2rem;
-      font-weight: bold;
-      color: #222;
-      margin-bottom: 16px;
-    }
-
-    .hero-subtitle {
-      font-size: 1.1rem;
-      color: #555;
-      margin-bottom: 28px;
-    }
-
-    .cta-button {
-      background-color: #ffc800;
-      color: #222;
-      border: none;
-      padding: 14px 32px;
-      font-size: 1.1rem;
-      font-weight: bold;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background 0.3s;
-      margin-bottom: 16px;
-    }
-
-    .cta-button:hover {
-      background-color: #e0b700;
-    }
-
-    /* Info section styles */
-    .info-section {
-      background: #fff;
-      padding: 32px 16px;
-      text-align: center;
-    }
-
-    .info-title {
-      font-size: 1.5rem;
-      color: #222;
-      margin-bottom: 12px;
-    }
-
-    .info-text {
-      color: #555;
-      font-size: 1rem;
-      margin-bottom: 20px;
-    }
-
-    /* Responsive design for mobile */
-    @media (max-width: 600px) {
-      .hero-title {
-        font-size: 1.3rem;
-      }
-      .info-title {
-        font-size: 1.1rem;
-      }
-      .hero img {
-        max-width: 90vw;
-      }
-    }
-  </style>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Navigation Bar -->
   <div class="navbar">
-    <div class="logo">
-      <!-- Placeholder logo image -->
-      <img src="cw_logo-2.png">
-      charity: water
+    <div class="navbar-content">
+      <!-- Logo image only, aligned to the left -->
+      <img src="img/cw_logo-2.png" alt="Charity Water Logo" 
+      
+      class="logo-img">
     </div>
   </div>
 
   <!-- Hero Section -->
-  <div class="hero">
-    <img src="image copy.png" alt="Clean Water Project">
-    <div class="hero-title">
-      Follow the money.<br>
-      Make the change you want to see.
+  <div class="hero-section">
+    <!-- Left side: text -->
+    <div class="hero-left">
+      <div class="hero-title">
+        Follow the money.<br>
+        Make the change <br> you want to see.
+      </div>
+      <div class="hero-subtitle">
+        See how our transparency and your <br>contributions are helping our cause
+      </div>
     </div>
-    <div class="hero-subtitle">
-      See how our transparency and your contributions are helping our cause.
+    <!-- Right side: button -->
+    <div class="hero-right">
+      <button class="cta-button">Where will my money go?</button>
     </div>
-    <button class="cta-button">Where will my money go?</button>
   </div>
 
-  <!-- Info Section -->
-  <div class="info-section">
-    <div class="info-title">100% of your donation funds clean water projects</div>
-    <div class="info-text">
-      We prove every project. You can see exactly where your money goes and the lives you help change.
-    </div>
-    <img src="https://via.placeholder.com/100x100?text=Icon" alt="Impact Icon">
-  </div>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <!-- Footer links are centered and easy to read -->
+    <a href="#" class="footer-link">Contact Us</a>
+    <span class="footer-divider">|</span>
+    <a href="#" class="footer-link">Learn More</a>
+    <span class="footer-divider">|</span>
+    <a href="#" class="footer-link">Donate</a>
+  </footer>
 </body>
 </html>
